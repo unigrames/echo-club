@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4e8b50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    margin-right: 50px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: white;
+    color: #4CAF50;
+}
+
+.hero {
+    background: url('images/aloe-vera.jpg') no-repeat center center/cover;
+    color: rgb(37, 41, 168);
+    padding: 150px 20px;
+    text-align:center;
+    padding:10px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+    color:#b32c0b
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 0;
+    
+}
+
+.plant-info, .programmes, .contact {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plant-info h2, .programmes h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plant-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.plant-card img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.plant-details {
+    width: 65%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.medicinal-uses {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.medicinal-uses h4 {    
+    margin-top: 0;
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+.medicinal-uses ul {
+    padding-left: 20px; /* Add padding to the list */
+    list-style-type: disc; /* Use disc bullets */
+}
+
+.medicinal-uses ul li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.image-slider {
+    display: flex;  /* Enables flexbox */
+    justify-content: center;  /* Centers images horizontally */
+    align-items: center;  /* Centers images vertically */
+    width: 100%;  /* Takes full width */
+    overflow: hidden;  /* Prevents overflow */
+}
+
+.slider-container {
+    display: flex;  /* Places images in a row */
+    gap: 20px;  /* Adds spacing between images */
+}
+
+.slider-image {
+    width: 100%;  /* Adjusts images to take equal width */
+    max-width: 700px;  /* Optional: Limits max width */
+    height: auto;  /* Maintains aspect ratio */
+}
