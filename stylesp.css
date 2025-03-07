@@ -1,0 +1,230 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Header Styling */
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.header-container h1 {
+    font-size: 40px;
+    text-align: justify;
+}
+
+.header-container h1 span {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.left-logo, .right-logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Plant Info Section */
+.plant-info {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.plant-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.plant-card img {
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.plant-details {
+    text-align: justify;
+}
+
+/* Medicinal Uses Section */
+.medicinal-uses {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.medicinal-uses h2 {
+    color:rgb(48, 73, 99);
+    text-align: center;
+    font-size:30px;
+}
+
+.medicinal-uses ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.medicinal-uses li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Programmes Section */
+.programmes {
+    background-color: #eef5ee;
+    padding: 40px;
+    text-align: center;
+}
+
+.programmes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.programmes li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-top: 2px solid #2E8B57;
+}
+
+.contact a {
+    color: #2E8B57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Additional Images Section */
+.additional-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* All Small Images (Bud, Flower, Seeds) */
+.image-container {
+    text-align: center;
+    width: 25%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plant-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .plant-card img {
+        width: 80%;
+    }
+
+    .additional-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        width: 80%;
+        height: auto;
+    }
+
+    .medicinal-uses {
+        text-align:justify;
+        padding: 15px;
+        font-size:30px;
+    }
+}
+
+
+/* Medicinal Uses Section */
+.medicinal-uses {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.medicinal-uses h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 28px; /* Increased heading size */
+    font-weight: bold;
+}
+
+.medicinal-uses ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.medicinal-uses li {
+    font-size: 22px; /* Increased text size */
+    font-weight: 200;
+    margin-bottom: 12px;
+    line-height: 1.3; /* Improved readability */
+}
+
