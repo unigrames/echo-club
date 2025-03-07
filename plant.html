@@ -17,6 +17,18 @@
             <img src="echo-club.png" alt="Eco Club Secondary Image" class="right-logo">
         </div>
     </header>
+
+    <!-- Navigation Buttons in a Separate Section -->
+    <div class="navigation-section">
+        <nav class="navigation-buttons">
+            <button onclick="window.location.href='https://unigrames.github.io/echo-club/'">Home</button>
+            <button onclick="scrollToSection('plant-info')">Plant Information</button>
+            <button onclick="scrollToSection('medicinal-uses')">Medicinal Information</button>
+            <button onclick="scrollToSection('programmes')">Programmes</button>
+            <button onclick="scrollToSection('contact')">Contact Us</button>
+        </nav>
+    </div>
+
     <section id="plant-info" class="plant-info">
         <h2>Plant Information</h2>
     
@@ -49,7 +61,7 @@
         </div>
     </section>
     
-    <!-- Medicinal Uses Section (Moved OUT of plant-card for better display) -->
+    <!-- Medicinal Uses Section -->
     <section id="medicinal-uses" class="medicinal-uses">
         <h2>Medicinal Uses</h2>
         <ul>
@@ -68,10 +80,10 @@
             <li>Controls cholesterol levels and reduces oxidative stress.</li>
         </ul>
     </section>
-        <section id="programmes" class="programmes">
-       <h2>Upcoming Programmes</h2>
-<p><em>Currently, there are no scheduled programmes. Any future events and updates will be announced here.</em></p>
 
+    <section id="programmes" class="programmes">
+       <h2>Upcoming Programmes</h2>
+       <p><em>Currently, there are no scheduled programmes. Any future events and updates will be announced here.</em></p>
     </section>
 
     <section id="contact" class="contact">
@@ -84,6 +96,23 @@
         <p>&copy; 2023 Eco Club, MIMS. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        // Function to scroll to a specific section
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Function to change button color on click
+        document.querySelectorAll('.navigation-buttons button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.navigation-buttons button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Add active class to the clicked button
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
